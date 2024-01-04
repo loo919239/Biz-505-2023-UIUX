@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      div {
+        /* 
+        flex-item 에 적용하는 속성
+        정수값을 주면 비율에 따라 자동으로 크기를 조절
+        */
+        /* flex: 1 0 50px; */
+        height: 100px;
+        margin: 10px;
+        background-color: greenyellow;
+      }
+
+      div:nth-of-type(1) {
+        background-color: blue;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100px;
+        /*위 3개를 아래로 요약*/
+        flex: 1 1 auto;
+      }
+      div:nth-of-type(2) {
+        flex-grow: 0;
+        flex-shrink: 0;
+        /*basis 커지는 크기 유지. shrink가 0 일때만 적용됨. */
+        flex-basis: 200px;
+        flex: 2 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
