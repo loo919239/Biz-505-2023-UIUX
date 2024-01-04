@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        background-color: yellowgreen;
+        padding: 0.7rem;
+        margin: 3px;
+        text-align: center;
+        color: white;
+      }
+
+      section {
+        margin: 0px auto;
+      }
+      section.main {
+        width: 100px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .img_ {
+        flex: 1;
+        text-align: center;
+      }
+
+      button {
+        background-color: yellowgreen;
+        border: 2px solid rgb(54, 138, 24);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h3>바라보기</h3></header>
+    <section class="main">
+      <img src="./images/0003.jpg" width="300px" class="img_" />
+      <button class="click1">쓰다듬기</button>
+      <button class="click2">먹이주기</button>
+    </section>
+  </body>
+  <script>
+    const click1 = document.querySelector(".click1");
+    const click2 = document.querySelector(".click2");
+
+    const click1_handler = () => {
+      alert("헥헥!");
+    };
+    const click2_handler = () => {
+      alert("와구와구");
+    };
+    click1.addEventListener("click", click1_handler);
+    click2.addEventListener("click", click2_handler);
+  </script>
+</html>
