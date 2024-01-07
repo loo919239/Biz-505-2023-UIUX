@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* https://stickode.tistory.com/599 참고 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+}
+
+nav ul {
+  background-color: #fff;
+  display: flex;
+  list-style-type: none;
+  height: 50px;
+}
+
+nav li {
+  cursor: pointer;
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+  color: #4e4e4e;
+  font-size: 12px;
+}
+
+    </style>
+</head>
+<body>
+    <p>냉장고를 추가하세요!</p>
+    <nav>
+      <ul>
+        <li class="active">
+          <a href="#">캘린더</a>
+        </li>
+        <li>
+            <a href="#">알람</a>
+        </li>
+      </ul>
+    </nav>
+
+
+</body>
+</html>
