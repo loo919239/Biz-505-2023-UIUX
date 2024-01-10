@@ -21,9 +21,11 @@ div.body li {
 }
 p {
   display: inline-block;
-  height: 1rem;
-  top: 1rem;
   text-align: center;
+}
+
+li:hover {
+  color: #4e4e4e;
 }
 .wrapper:hover {
   color: inherit;
