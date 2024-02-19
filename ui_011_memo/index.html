@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>나의 홈페이지</title>
+    <link rel="stylesheet" href="memo.css" />
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h3>오늘은 내 생의 가장 젊은날</h3></header>
+    <section class="main">
+      <div class="aside">
+        <form class="date">
+          <input class="todaye" type="text" value="2024-02-19" name="m_date" />
+          <input class="totime" type="text" value="09:25:00" name="m_time" />
+          <input class="btn_new" type="button" value="새로작성" />
+        </form>
+        <ul>
+          <li><img src="./image/rose-4242262_640.jpg" alt="" width="20px" />설산에서 고행을</li>
+          <li><img src="./image/rose-4242262_640.jpg" alt="" width="20px" />없는 사막이다 보이는</li>
+          <li><img src="./image/rose-4242262_640.jpg" alt="" width="20px" />하는 온갖 과실이</li>
+        </ul>
+      </div>
+      <div class="aside">
+        <form class="input" method="POST">
+          <input class="tosubjecy" type="text" placeholder="제목을 입력하세요" />
+          <input class="tomemo" type="text" placeholder="제목을 입력하세요" />
+          <input type="file" />
+          <input class="btn_save" type="button" value="저장" />
+        </form>
+      </div>
+    </section>
+    <footer><address>CopyRight &copy; loo919239@naver.com</address></footer>
+  </body>
+</html>
